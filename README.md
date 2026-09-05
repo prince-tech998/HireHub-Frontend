@@ -1,16 +1,80 @@
-# React + Vite
+# HireHub - Job Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HireHub is a full-stack job portal web application built using the MERN stack.
 
-Currently, two official plugins are available:
+It provides separate experiences for Job Seekers and Recruiters, allowing users to search for jobs, apply for jobs, save jobs, post jobs, manage applications, and track hiring activity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 👨‍💻 Job Seeker
+- User registration and login
+- Browse available jobs
+- Search jobs by keyword
+- Filter jobs by location, job type, and experience
+- View detailed job information
+- Apply for jobs with a cover letter
+- Save and remove saved jobs
+- Track submitted applications
+- View application status
+- Manage user profile
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🏢 Recruiter
+- Recruiter registration and login
+- Recruiter dashboard
+- Post new jobs
+- Edit existing jobs
+- Delete jobs
+- View applicants
+- Search and filter applicants
+- Update application status
+- Track hiring statistics
+- Manage recruiter profile
 
-## Expanding the ESLint configuration
+### 🔐 Authentication & Security
+- JWT-based authentication
+- Protected routes
+- Role-based authorization
+- Separate permissions for Job Seekers and Recruiters
+- Environment variables for sensitive configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- React Router
+- Bootstrap
+- Axios
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcrypt
+- CORS
+- dotenv
+
+## 📁 Project Structure
+
+```text
+HireHub
+│
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   └── App.jsx
+│   └── package.json
+│
+└── backend
+    ├── config
+    ├── controllers
+    ├── middleware
+    ├── models
+    ├── routes
+    ├── server.js
+    └── package.json
